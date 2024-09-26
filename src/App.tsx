@@ -1,13 +1,26 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import NavBar from "./components/NavBar";
+import Slides from "./components/Slides";
+import Grid from "@mui/material/Grid2";
+import Circles from "./components/Circles";
+import { slides } from "./sldies";
 
 function App() {
   return (
     <Box>
       <NavBar />
-      <Typography align="center" variant="h1">
-        Coming soon
-      </Typography>
+      <Grid
+        container
+        spacing={0}
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Grid size={6}>
+          <Slides slides={slides}></Slides>
+        </Grid>
+      </Grid>
+      <Circles />
     </Box>
   );
 }
