@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { FC } from "react";
 import Grid from "@mui/material/Grid2";
 import MyImage from "../MyImage";
